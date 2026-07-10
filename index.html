@@ -195,6 +195,13 @@ html[data-theme="dark"] header.scrolled{background:rgba(15,17,21,.85);}
 .logo{display:flex;align-items:center;gap:10px;font-family:var(--font-head);font-weight:700;font-size:18px;letter-spacing:.01em;color:#fff;transition:color .4s var(--ease);}
 header.scrolled .logo{color:var(--ink);}
 .logo-mark{width:38px;height:38px;border-radius:10px;background:var(--primary);display:flex;align-items:center;justify-content:center;color:var(--accent);font-weight:800;font-size:18px;box-shadow:0 0 0 3px rgba(13,71,161,.15);flex-shrink:0;}
+.logo-img{
+    width:52px;
+    height:52px;
+    object-fit:contain;
+    border-radius:50%;
+    margin-right:12px;
+}
 .logo small{display:block;font-family:var(--font-body);font-weight:500;font-size:9.5px;letter-spacing:.16em;color:var(--accent);text-transform:uppercase;margin-top:1px;}
 nav.main-nav{display:flex;align-items:center;gap:38px;}
 nav.main-nav a{font-family:var(--font-head);font-size:14.5px;font-weight:500;color:rgba(255,255,255,.88);position:relative;padding:4px 0;transition:color .3s;}
@@ -495,9 +502,13 @@ html[data-theme="dark"] .theme-toggle .moon{display:block;}
 <header id="siteHeader">
   <div class="container nav-inner">
     <a href="#home" class="logo">
-      <span class="logo-mark">O</span>
-      <span>OJAS SIGNAGE<small>Solution</small></span>
-    </a>
+    <img src="images/logo.png" alt="OJAS Signage Logo" class="logo-img">
+
+    <span>
+        OJAS SIGNAGE
+        <small>Solution</small>
+    </span>
+</a>
     <nav class="main-nav">
       <a href="#home">Home</a>
       <a href="#about">About</a>
